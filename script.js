@@ -698,9 +698,6 @@ function showResults() {
     nextSectionBtn.style.display = currentSection === totalSections - 1 ? 'none' : 'inline-block';
     submitTestBtn.style.display = currentSection === totalSections - 1 ? 'inline-block' : 'none';
     
-    // Actualizar el contador de página
-    pageCounter.textContent = `${currentSection + 1} / ${totalSections}`;
-    
      // Update progress
     updateGlobalProgress();
      
