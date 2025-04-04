@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>V2</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body>
+    <div class="container">
+        <header>
+            <h1>Test de Emociones y Comportamientos Reactivos</h1>
+            <p class="intro">Este test te ayudará a identificar qué emociones predominan en tu vida y cómo afectan tus relaciones.. </p>
+        </header>
+
+        
+
+        <div id="test-instructions" class="card">
+            <h2>Instrucciones</h2>
+            <p>Califica cada comportamiento en una escala de 0 a 10, donde:</p>
+            <ul>
+                <li><strong>0</strong>: Nunca lo hago</li>
+                <li><strong>10</strong>: Siempre lo hago</li>
+            </ul>
+            <p>Se honesto/a contigo mismo/a para obtener resultados precisos.</p>
+          <h4>Si estás en tu teléfono, gira la pantalla para verlo mejor.</h4>
+            <button id="start-test" class="btn">Comenzar Test</button>
+        </div>
+
+        <form id="test-form" style="display: none;">
+            <div id="test-sections"></div>
+ 
+          <div class="progress-container">
+    <div class="progress-label">Progreso del test</div>
+    <div id="global-progress" class="global-progress-bar"></div>
+    <span id="progress-text">0% completado</span>
+</div>
+            <div class="navigation-buttons">
+                <button type="button" id="prev-section" class="btn btn-secondary" disabled>Anterior</button>
+               <div id="page-counter" class="contador-pagina"></div>
+                <button type="button" id="next-section" class="btn">Siguiente</button>
+                <button type="submit" id="submit-test" class="btn btn-primary" style="display: none;">Ver Resultados</button>
+            </div>
+        </form>
+
+        <div id="results" style="display: none;">
+            <div class="results-container">
+                <h2>Resultados de tu Test</h2>
+                
+                <div class="results-section">
+                    <h3>Emociones que Restan Energía</h3>
+                    <div class="score-display">
+                        <div class="score-value">Puntaje: <span id="negative-score">0</span></div>
+                        <div class="score-max">Máximo posible: 800</div>
+                    </div>
+                    <div class="progress-container">
+                        <div id="negative-progress" class="progress-bar"></div>
+                    </div>
+                    <div id="negative-interpretation" class="interpretation"></div>
+                </div>
+                
+                <div class="results-section">
+                    <h3>Emociones que Potencian Energía</h3>
+                    <div class="score-display">
+                        <div class="score-value">Puntaje: <span id="positive-score">0</span></div>
+                        <div class="score-max">Máximo posible: 900</div>
+                    </div>
+                    <div class="progress-container">
+                        <div id="positive-progress" class="progress-bar"></div>
+                    </div>
+                    <div id="positive-interpretation" class="interpretation"></div>
+                </div>
+                
+                <div class="top-emotions">
+                    <div class="top-section">
+                        <h4>Tus 3 emociones que más restan energía:</h4>
+                        <ol id="top-negative"></ol>
+                    </div>
+                    <div class="top-section">
+                        <h4>Tus 3 emociones que más potencian energía:</h4>
+                        <ol id="top-positive"></ol>
+                    </div>
+              </div>
+                    <div class="final-buttons">
+                        <button id="restart-test" class="btn btn-primary">Reiniciar Test</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
